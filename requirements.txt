@@ -1,2 +1,5 @@
 streamlit
-python-dotenv
+moviepy
+imageio
+imageio-ffmpeg==0.4.10
+ffmpeg-python
