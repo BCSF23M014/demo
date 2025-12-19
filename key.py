@@ -1,10 +1,2 @@
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
-if not GOOGLE_API_KEY:
-    st.error("❌ GOOGLE_API_KEY not found")
-    st.stop()
+import streamlit as st
+st.write("Google key loaded:", bool(st.secrets.get("GOOGLE_API_KEY")))
