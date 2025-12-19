@@ -1,7 +1,7 @@
 streamlit
 moviepy
 imageio
-imageio-ffmpeg==0.6.0
+imageio-ffmpeg
 ffmpeg-python
 openai-whisper
 torch
