@@ -1,11 +1,13 @@
-import streamlit as st
-from moviepy import VideoFileClip
-import whisper
 import os
 import imageio_ffmpeg
 
-# 🔥 Fix ffmpeg path for Streamlit Cloud
-os.environ["PATH"] += os.pathsep + os.path.dirname(imageio_ffmpeg.get_ffmpeg_exe())
+# 🔥 REQUIRED: tell Whisper exactly where ffmpeg is
+ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+os.environ["FFMPEG_BINARY"] = ffmpeg_path
+
+import streamlit as st
+from moviepy import VideoFileClip
+import whisper
 
 st.title("Video Transcription App")
 
