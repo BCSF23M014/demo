@@ -33,7 +33,7 @@ api_key = st.secrets.get("GOOGLE_API_KEY")
 # -----------------------------
 @st.cache_resource
 def load_whisper_model():
-    return whisper.load_model("tiny")
+    return whisper.load_model("medium")
 
 # -----------------------------
 # Load Spacy
