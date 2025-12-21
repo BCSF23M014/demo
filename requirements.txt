@@ -1,8 +1,34 @@
 streamlit
+python-dotenv
+
+# Video & Audio
 moviepy
 imageio
 imageio-ffmpeg
 ffmpeg-python
+
+# Speech-to-Text
 openai-whisper
-torch
-setuptools
+
+# NLP & Translation
+https://github.com/explosion/spacy-models/releases/download/xx_sent_ud_sm-3.8.0/xx_sent_ud_sm-3.8.0-py3-none-any.whl
+argostranslate
+srt
+wordcloud
+
+# Data & Visualization
+matplotlib
+
+# LangChain + Vector Store
+langchain
+langchain-community
+langchain-classic
+langchain-core
+langchain-huggingface
+langchain-google-genai
+chromadb
+sentence-transformers
+
+# Utilities
+pydantic
+sqlite-utils
